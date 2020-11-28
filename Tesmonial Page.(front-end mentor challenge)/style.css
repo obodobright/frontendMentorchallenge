@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Semi';
+    font-size: 0.8rem;
+    background: azure
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.first-main {
+    height: 370px;
+    background: hsl(263, 55%, 52%);
+    border-radius: 1em;
+    margin: 4em 1em 0.5em 1em;
+    padding: 2em 2em 2em 2em
+}
+
+.page-header {
+    display: flex;
+    padding-bottom: 1.5em;
+    color: white
+}
+
+.page-header p {
+    margin: auto;
+    margin-left: 0;
+}
+
+img {
+    border-radius: 7em;
+    margin-right: 15px;
+    vertical-align: top;
+}
+
+.plead {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    word-spacing: 3px;
+    margin-bottom: 0.5em;
+}
+
+.ptext {
+    color: whitesmoke;
+    word-spacing: 0.3em;
+    line-height: 1.2em;
+}
+
+.second-main {
+    height: 250px;
+    background: hsl(217, 19%, 35%);
+    border-radius: 1em;
+    margin: 1em 1em 2em 1em;
+    padding: 2em 2em 2em 2em
+}
+
+.third-main {
+    height: 220px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 1em;
+    margin: 1em 1em 2em 1em;
+    padding: 2em 2em 2em 2em
+}
+
+.third-main .plead {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsl(217, 19%, 35%);
+    word-spacing: 3px;
+    margin-bottom: 0.5em;
+}
+
+.third-main .ptext {
+    color: hsl(217, 19%, 35%);
+    word-spacing: 0.3em;
+    line-height: 1.2em;
+}
+
+.fourth-main {
+    height: 350px;
+    background: hsl(219, 29%, 14%);
+    border-radius: 1em;
+    margin: 1em 1em 0.5em 1em;
+    padding: 2em 2em 2em 2em
+}
+
+.fifth-main {
+    height: 390px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 1em;
+    margin: 1em 1em 6em 1em;
+    padding: 2em 2em 2em 2em
+}
+
+.fifth-main .plead {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsl(217, 19%, 35%);
+    word-spacing: 3px;
+    margin-bottom: 0.5em;
+}
+
+.fifth-main .ptext {
+    color: hsl(217, 19%, 35%);
+    word-spacing: 0.3em;
+    line-height: 1.2em;
+}
+
+@media (min-width:768px) {
+    .fifth-main {
+        float: right;
+        width: 250px;
+        height: 550px;
+        margin-left: 3em;
+        position: fixed;
+        top: 5.5%;
+        left: 71%
+    }
+    .fifth-main::before {
+        content: "";
+        display: block;
+        clear: both
+    }
+    .first-main {
+        height: 300px;
+        margin: 4em 1em 0.5em 1em;
+        width:
+    }
+    .second-main {
+        width: 200px;
+        height: 300px;
+        margin: 4em 1em 0.5em 0em;
+    }
+    .third-main {
+        width: 200px;
+        height: 300px;
+    }
+    .fourth-main {
+        height: 300px;
+        margin-left: 1em;
+        width: 740px
+    }
+    .row::after {
+        content: "";
+        display: block;
+        clear: both
+    }
+    [class*=column-] {
+        float: left;
+        box-sizing: border-box;
+    }
+    .column-1 {
+        width: 58.3333%
+    }
+    .column-2 {
+        width: 16.6667%
+    }
+    .column-3 {
+        width: 16.6667%;
+    }
+    .column-4 {
+        width: 58.3333%
+    }
+}
